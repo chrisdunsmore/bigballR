@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>bigballR Hello World</title>
+  <style>
+    body { font-family: sans-serif; max-width: 700px; margin: auto; padding: 2em; }
+    pre { background: #f4f4f4; padding: 1em; border-left: 5px solid #ccc; }
+  </style>
+</head>
+<body>
+  <h1>Hello from bigballR</h1>
+  <p>This is a simple usage example for the <code>bigballR</code> R package:</p>
+
+  <h2>Install</h2>
+  <pre><code>
+# Install the development version from GitHub
+if (!requireNamespace("devtools", quietly = TRUE))
+  install.packages("devtools")
+
+devtools::install_github("chrisdunsmore/bigballR")
+  </code></pre>
+
+  <h2>Usage Example</h2>
+  <pre><code>
+library(bigballR)
+
+# Get D1 team stats for 2023 season
+df <- get_team_stats(year = 2023)
+
+head(df)
+  </code></pre>
+
+  <p>For more info, visit the <a href="https://github.com/chrisdunsmore/bigballR">GitHub repo</a>.</p>
+</body>
+</html>
